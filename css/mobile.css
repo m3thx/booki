@@ -1,0 +1,363 @@
+@media screen and (max-width: 768px) {
+
+    @media screen and (max-width: 992px) {
+
+        /* Définition de variables */
+        :root {
+            --max-width: 100%;
+        }
+
+        /********************************/
+        /* Mise en forme générale */
+        /********************************/
+
+
+        h1 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 14px;
+
+        }
+
+        /************************/
+        /* Mise en forme header */
+        /************************/
+
+        #header {
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        #logo {
+            margin: 30px 0 0 40px ;
+            text-align: center;
+        }
+
+        #logo img {
+            height: 60px;
+        }
+
+        #nav {
+            width: var(--max-width);
+        }
+
+        #nav ul {
+            margin: 0;
+            padding: 0;
+            height: fit-content;
+            padding-inline-start: 0;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+
+        #nav ul li {
+            padding: 20px 0 15px 0;
+            margin-bottom: 10px;
+            text-align: center;
+            justify-content: stretch;
+            width: var(--max-width);
+        }
+
+        #nav ul li {
+            border-top: none;
+            border-bottom: 2px solid var(--backgd_grey);
+        }
+
+        #nav ul li:hover {
+            border-top: none;
+            border-bottom: 2px solid var(--blue_dark);
+        }
+
+        /***************************/
+        /* Mise en forme section 1 */
+        /***************************/
+
+        #section1 {
+            padding: 0 20px;
+        }
+
+        /* Mise en forme zone de recherche */
+
+        #section1_form_location {
+            width: 100%;
+            max-width: 340px;
+        }
+
+        /* Mise en forme zone de texte */
+
+        #section1_recherche_searchfield input {
+            height: 50px;
+        }
+
+        #section1_recherche_searchfield input[type="text"] {
+            font-size: 18px;
+            padding-right: 0;
+            padding-left: 15px;
+            width: inherit;
+        }
+
+        /* Mise en forme bouton */
+
+        .section1_recherche_searchfield_button_text {
+            display: none;
+        }
+
+        .section1_recherche_searchfield_button_icon {
+            display: flex;
+            background-color: var(--blue_dark);
+            border-radius: 12px;
+            font-weight: 500;
+            font-size: 15px;
+            padding: 15px;
+            line-height: 15px;
+            margin-left: -5px;
+            border: 1px solid var(--blue_dark);
+            border-bottom: none;
+            cursor: pointer;
+        }
+
+        .section1_recherche_searchfield_button_icon i {
+            color: white;
+        }
+
+        /* Mise en forme icon */
+
+        .fa-location-dot {
+            min-width: 50px;
+            height: 50px;
+            font-size: 17px;
+        }
+
+        /* Mise en forme filtres */
+
+        #section1_filtres {
+            margin-top: 20px;
+        }
+
+        .section1_filtres_container {
+            display: inline-block;
+        }
+        
+        #section1_filtres_icons {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: stretch;
+            margin-left: 0;
+            height: 140px;
+        }
+
+        .filtres_btn {
+            margin: 0 10px 0 0;
+        }
+
+        #section1_filtres_info {
+            align-items: flex-start;
+            padding: 0 0 20px 0;
+        }
+
+        /* Mise en forme icons info */
+
+        #section1_filtres_info i {
+            margin: 12px 12px 0 6px;
+        }
+
+        /**************************/
+        /* Mise en page section 2 */
+        /**************************/
+
+        #section2 {
+            flex-direction: column-reverse;
+            height: fit-content;
+            padding: 0 0px;
+        }
+
+        #section2_bigcard {
+            background-color: white;
+            width: 100%;
+            margin-right: 0;
+            padding: 0 20px;
+        }
+
+        #section2_bigcard h2 {
+            padding: 35px 0 20px 0;
+        }
+
+        #section2_bigcard>h3 {
+            margin: 0;
+            padding: 30px 0 0px 0;
+        }
+
+        #section2_hebergements {
+            height: fit-content;
+            width: 100%;
+        }
+
+        /* Mise en forme section 2 hébergements cards */
+
+        .section2_hebergements_card {
+            height: 180px;
+            width: 100%;
+            min-width: 170px;
+            margin-bottom: 10px;
+        }
+
+        .section2_hebergements_card img {
+            height: 110px;
+
+        }
+
+        .section2_hebergements_card_text>* {
+            margin: 5px 0 -3px 10px;
+        }
+
+        /* Mise en forme aside section 2 */
+
+        #section2_populaires {
+            width: var(--max-width);
+            height: 510px;
+            border-radius: 0;
+        }
+
+        }
+
+        #section2_populaires_titre h2 {
+            padding: 35px 20px 0 20px;
+        }
+
+        #section2_populaires_titre p {
+            padding: 22px 20px 0 0;
+        }
+        #section2_populaires_titre i {
+            padding-top: 2.5px;
+        }
+
+
+        .section2_populaires_card {
+            border-radius: 18px;
+            background-color: white;
+            padding-left: 20px;
+            width: calc(100% - 40px);
+            height: 130px;
+            margin: 5px 20px 5px 20px;
+            box-shadow: 0px 0px 16px 1px var(--box-shadow);
+        }
+
+
+        .section2_populaires_card img {
+            width: 35%;
+        }
+
+        .section2_populaires_card_info {
+            padding-left: 16px;
+            padding-right: 40px;
+        }
+
+        .section2_populaires_card_text>p {
+            margin-top: -5px;
+        }
+
+        .section2_populaires_card_text_star {
+            margin-bottom: 10px;
+        }
+
+        /***************************/
+        /* Mise en forme section 3 */
+        /***************************/
+
+        #section3 {
+            margin: 0 auto 20px auto;
+            padding: 40px 20px 0 20px;
+        }
+
+        #section3_bigcard {
+            height: inherit;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .section3_card_big {
+            height: 200px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .section3_card_big img {
+            height: 160px;
+        }
+
+        .section3_card_double_1 {
+            height: fit-content;
+            width: 100%;
+        }
+
+        .section3_card_double_1_1 {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .section3_card_double_1_1 img {
+            height: 160px;
+        }
+
+        .section3_card_double_1_2 {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .section3_card_double_1_2 img {
+            height: 160px;
+        }
+
+        .section3_card_double_2 {
+            height: fit-content;
+            width: 100%;
+        }
+
+        .section3_card_double_2_1 {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .section3_card_double_2_1 img {
+            height: 160px;
+        }
+
+        .section3_card_double_2_2 {
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .section3_card_double_2_2 img {
+            height: 160px;
+        }
+
+        /************************/
+        /* Mise en forme footer */
+        /************************/
+
+        .footer_container {
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-left: 20px;
+            height: 340px;
+        }
+        .footer_container_list h4 {
+            margin: 30px 0 0 0;
+        }
+
+        .footer_container_list ul {
+            margin-bottom: 0;
+        }
+        .footer_container_list li {
+            padding-bottom: 7px;
+        }
+
+        .footer_container_list {
+            margin: 0 0;
+        }
+
+    }

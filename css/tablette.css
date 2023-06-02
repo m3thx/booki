@@ -1,0 +1,126 @@
+@media screen and (max-width: 992px) {
+
+    /* Définition de variables */
+    :root {
+
+        --max-width: 100%;
+    }
+
+    /************************/
+    /* Mise en forme header */
+    /************************/
+
+    #header {
+        max-width: var(--max-width);
+    }
+
+
+    #nav ul li {
+        border-top: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0);
+    }
+
+    #nav ul li:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--blue_dark);
+    }
+
+    /***************************/
+    /* Mise en forme section 1 */
+    /***************************/
+
+    /* Mise en forme filtres */
+
+    #section1_filtres {
+        margin-right: 30px;
+    }
+
+    .section1_filtres_container {
+        max-width: 100%;
+    }
+
+    /**************************/
+    /* Mise en page section 2 */
+    /**************************/
+
+    #section2 {
+        height: 600px;
+
+    }
+
+    #section2_bigcard {
+        margin-right: 1%;
+    }
+
+    #section2_bigcard>h3 {
+        padding: 75px 0 0px 5%;
+    }
+
+    /* Mise en forme section 2 hébergements cards */
+
+    .section2_hebergements_card {
+        width: 45%;
+        min-width: 170px;
+    }
+
+
+    /* Mise en forme aside section 2 */
+
+
+
+    .section2_populaires_card {
+
+        width: 84%;
+        height: 23%;
+        margin: 0 auto 40px auto;
+    }
+
+
+    .section2_populaires_card img {
+        width: 40%;
+    }
+
+    /***************************/
+    /* Mise en forme section 3 */
+    /***************************/
+
+    #section3 {
+        height: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto 30px auto;
+        padding: 60px 30px 0 30px;
+    }
+
+    #section3_bigcard {
+        height: inherit;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .section3_card_big {
+        width: 35%;
+    }
+
+    .section3_card_double_1 {
+        width: 35%;
+    }
+
+    .section3_card_double_2 {
+        width: 35%;
+    }
+
+    /************************/
+    /* Mise en forme footer */
+    /************************/
+
+    .footer_container {
+        justify-content: flex-start;
+    }
+
+    .footer_container_list {
+        margin: 0 auto;
+    }
+
+}
